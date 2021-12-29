@@ -78,7 +78,7 @@ export function LoginForm({ togglePromptMode }) {
 				<Form.Item name="password" style={{ marginBottom: 10 }}>
 					<Input type="password" placeholder="Password" style={inputStyle} />
 				</Form.Item>
-				<button className="w-full py-2 rounded bg-yellow-200 font-semibold focus:outline-none">
+				<button className="w-full py-2 rounded bg-green-200 font-semibold focus:outline-none">
 					Login
 				</button>
 				<div className="flex justify-between items-center mt-5">
@@ -137,7 +137,7 @@ export function RegistrationForm({ togglePromptMode }) {
 				<Form.Item name="password" style={{ marginBottom: 10 }}>
 					<Input type="password" placeholder="Password" style={inputStyle} />
 				</Form.Item>
-				<button className="w-full py-2 rounded bg-yellow-200 font-semibold focus:outline-none">
+				<button className="w-full py-2 rounded bg-green-200 font-semibold focus:outline-none">
 					Sign Up
 				</button>
 				<div className="flex justify-center items-center mt-5">

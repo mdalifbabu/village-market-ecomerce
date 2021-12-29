@@ -18,6 +18,7 @@ import Orders from "./pages/Orders";
 import Settings from "./pages/Settings";
 import Administration from "./pages/Administration";
 import PrivateRoute from "./components/PrivateRoute";
+import AllCategory from "./pages/AllCategory";
 
 const allRoles = ["user", "admin", "superadmin"];
 const userRoles = ["user"];
@@ -30,6 +31,7 @@ ReactDOM.render(
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/cart" component={Cart} />
+					<Route exact path="/category/all" component={AllCategory} />
 					<Route exact path="/product/:slug" component={ProductDetail} />
 					<Route exact path="/category/:categorySlug" component={Category} />
 					<Route exact path="/search" component={SearchResult} />

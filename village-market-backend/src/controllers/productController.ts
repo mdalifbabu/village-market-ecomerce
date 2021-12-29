@@ -89,7 +89,9 @@ export default class ProductController {
 
 	public async getProductByCategory(req: Request, res: Response) {
 		try {
-			let products = await Product.find({ category: req.params.categorySlug });
+			let category = await Category.findOne({ slug: req.query.categorySlug });
+			console.log(category._id);
+			let products = await Product.find({ category: category._id });
 			res.send(products);
 		} catch (err) {
 			res.send(err);
@@ -110,6 +112,47 @@ export default class ProductController {
 
 		try {
 			let category = await newCategory.save();
+			res.send(category);
+		} catch (err) {
+			res.send(err);
+		}
+	}
+
+	public async updateCategory(req: Request, res: Response) {
+		let categoryId = req.body._id;
+		let updatedCategory = req.body;
+
+		try {
+			let category = await Category.findOneAndUpdate(
+				{ _id: categoryId },
+				updatedCategory,
+				{ upsert: true, new: true }
+			);
+			res.send(category);
+		} catch (err) {
+			res.send(err);
+		}
+	}
+
+	public async deleteCategory(req: Request, res: Response) {
+		let categoryId = req.body._id;
+
+		try {
+			let del = await Category.deleteOne({ _id: categoryId }).exec();
+			if (del > 0) {
+				res.send({ msg: "Product deleted successfully" });
+			} else {
+				res.status(500).send({ msg: "something error" });
+			}
+		} catch (err) {
+			res.send(err);
+		}
+	}
+
+	public async getSingleCategory(req: Request, res: Response) {
+		try {
+			console.log(req.query.slug);
+			let category = await Category.findOne({ slug: req.query.slug });
 			res.send(category);
 		} catch (err) {
 			res.send(err);

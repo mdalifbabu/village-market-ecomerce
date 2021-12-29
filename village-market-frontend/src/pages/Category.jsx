@@ -13,8 +13,10 @@ export default function Category() {
 
 	useEffect(() => {
 		coreAxios
-			.get(`/api/category/${categorySlug}`)
-			.then((res) => setProducts(res.data))
+			.get(`/api/category/products?categorySlug=${categorySlug}`)
+			.then((res) => {
+				setProducts(res.data);
+			})
 			.catch((err) => console.log(err));
 
 		return () => {

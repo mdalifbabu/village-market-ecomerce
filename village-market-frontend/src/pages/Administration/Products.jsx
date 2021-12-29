@@ -82,7 +82,7 @@ export default function Products() {
 	const columns = [
 		{
 			title: "Thumbnail",
-			dataIndex: "image",
+			dataIndex: "image",	
 			key: "image",
 			width: 100,
 			render: (path, record) => (
@@ -112,7 +112,7 @@ export default function Products() {
 			title: "Category",
 			key: "category",
 			dataIndex: "category",
-			render: (category) => category?.title,
+			//render: (category) => {<>{category}</>}
 		},
 		{
 			title: "Action",

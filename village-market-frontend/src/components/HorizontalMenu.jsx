@@ -108,7 +108,7 @@ export default function HorizontalMenu() {
 												</span>
 											</button>
 											<button
-												className="py-1.5 px-5 bg-yellow-200 rounded font-semibold hidden lg:block focus:outline-none"
+												className="py-1.5 px-5 bg-green-200 rounded font-semibold hidden lg:block focus:outline-none"
 												onClick={enableLoginMode}
 											>
 												Login
@@ -162,7 +162,7 @@ export default function HorizontalMenu() {
 					border-bottom: 1px solid rgba(0, 0, 0, 0.09);
 					position: fixed;
 					top: 0;
-					background: white;
+					background: #D7BDE2;
 					z-index: 999;
 					width: 100%;
 				}

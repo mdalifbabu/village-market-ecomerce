@@ -33,7 +33,7 @@ export default function VerticalMenu() {
 					<div className="px-5 pt-3 vertical-menu">
 						<Link to="/" className="logo">
 							<img
-								src="https://i.postimg.cc/Y0YWqyb4/village-market.png"
+								src="https://www.coolgenerator.com/Data/Textdesign/202112/8b1c3c43ec88de0b269ca7b73a285215.png"
 								alt="logo"
 								className="w-3/4"
 							/>
@@ -74,7 +74,7 @@ export default function VerticalMenu() {
 					width: 230px;
 					height: 100%;
 					border-right: 1px solid rgb(179 179 179 / 50%);
-					background: white;
+					background: #D7BDE2;
 				}
 
 				.bg-shadow {

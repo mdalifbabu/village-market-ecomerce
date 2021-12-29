@@ -18,17 +18,20 @@ export default function Sidebar({ collapsed, setCollapsed }) {
 
 	return (
 		<>
-			<Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>
+			<Sider style={{backgroundColor: "#58D68D"}} collapsible collapsed={collapsed} onCollapse={onCollapse}>
 				<div className="logo-wrapper">
 					<img
-						src="https://i.postimg.cc/Y0YWqyb4/village-market.png"
+						src="https://www.coolgenerator.com/Data/Textdesign/202112/8b1c3c43ec88de0b269ca7b73a285215.png"
 						alt="logo"
 						className="logo"
 					/>
 				</div>
-				<Menu theme="dark" defaultSelectedKeys={["dashboard"]} mode="inline">
+				<Menu style={{backgroundColor: "#58D68D"}} defaultSelectedKeys={["dashboard"]} mode="inline">
 					<Menu.Item key="dashboard" icon={<DashboardOutlined />}>
 						<Link to="/admin">Dashboard</Link>
+					</Menu.Item>
+					<Menu.Item key="categories" icon={<TeamOutlined />}>
+						<Link to="/admin/categories">Category</Link>
 					</Menu.Item>
 					<Menu.Item key="products" icon={<InboxOutlined />}>
 						<Link to="/admin/products">Products</Link>

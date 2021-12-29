@@ -32,6 +32,10 @@ export default function AdminLayout({ children }) {
 				.ant-modal-close:focus {
 					outline: none;
 				}
+
+				.ant-layout-sider-trigger{
+					background: #58D68D;
+				}
 			`}</style>
 		</>
 	);
@@ -39,7 +43,7 @@ export default function AdminLayout({ children }) {
 
 function HeaderContent() {
 	return (
-		<Header className="header">
+		<Header style={{backgroundColor: "#58D68D"}}>
 			<Dropdown overlay={menu} trigger={["click"]}>
 				<button className="text-gray-200 ml-auto block focus:outline-none">
 					<span className="material-icons pt-5" style={{ fontSize: 25 }}>
@@ -52,7 +56,7 @@ function HeaderContent() {
 }
 
 const menu = (
-	<Menu>
+	<Menu style={{backgroundColor: "#58D68D"}}>
 		<Menu.Item key="profile">
 			<Link to="/profile">Profile</Link>
 		</Menu.Item>

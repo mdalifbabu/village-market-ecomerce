@@ -18,12 +18,26 @@ export default class ProductRoutes {
 			"/products/categories",
 			this.productController.getCategories
 		);
+		this.router.get(
+			"/products/category",
+			this.productController.getSingleCategory
+		);
 		this.router.post(
 			"/products/categories",
 			this.productController.addCategory
 		);
+		this.router.put(
+			"/products/categories",
+			authorize("superadmin", "admin"),
+			this.productController.updateCategory
+		);
+		this.router.delete(
+			"/products/categories",
+			authorize("superadmin", "admin"),
+			this.productController.deleteCategory
+		);
 		this.router.get(
-			"/category/:categorySlug",
+			"/category/products",
 			this.productController.getProductByCategory
 		);
 		this.router.post(
