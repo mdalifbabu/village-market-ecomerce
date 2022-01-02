@@ -74,7 +74,7 @@ export default function VerticalMenu() {
 					width: 230px;
 					height: 100%;
 					border-right: 1px solid rgb(179 179 179 / 50%);
-					background: #D7BDE2;
+					background: linear-gradient(to bottom, #74ebd5, #acb6e5);
 				}
 
 				.bg-shadow {

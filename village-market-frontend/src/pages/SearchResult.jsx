@@ -21,7 +21,7 @@ export default function SearchResult({ location }) {
 	}, [searchQuery]);
 
 	return (
-		<div>
+		<div style={{ background: 'linear-gradient(to right, #74ebd5, #acb6e5)'}}>
 			{searchResult ? (
 				searchResult.length ? (
 					<div className="flex flex-wrap md:mt-4 mx-3">

@@ -56,7 +56,7 @@ export default function ProductCard({ product: propProduct, cart }) {
 							>
 								{product.title.substr(0, 35)}
 							</Link>
-							<span className="flex-grow">${product.price}</span>
+							<span className="flex-grow"><span className="text-xl">&#2547;</span>{product.price}</span>
 							{product.qty ? (
 								<CounterButton product={product} qty={product.qty} />
 							) : (

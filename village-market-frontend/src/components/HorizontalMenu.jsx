@@ -162,7 +162,7 @@ export default function HorizontalMenu() {
 					border-bottom: 1px solid rgba(0, 0, 0, 0.09);
 					position: fixed;
 					top: 0;
-					background: #D7BDE2;
+					background: linear-gradient(to right, #74ebd5, #acb6e5);
 					z-index: 999;
 					width: 100%;
 				}

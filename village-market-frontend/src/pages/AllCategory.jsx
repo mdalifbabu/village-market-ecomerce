@@ -29,7 +29,7 @@ export default function AllCategory() {
 	};
 
 	return (
-		<div>
+		<div style={{ background: 'linear-gradient(to right, #74ebd5, #acb6e5)'}}>
 			<section className="featured p-2 md:p-4">
 				<h2 className="ml-2 mt-2 font-bold text-xl md:text-2xl text-gray-700">
 					All Products

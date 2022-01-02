@@ -44,7 +44,7 @@ export default function Cart() {
 				.then((res) => {
 					message.success("Order Created Successfully");
 					dispatch(clearCart());
-					history.push("/orders");
+					//history.push("/orders");
 				})
 				.catch((err) => {
 					message.error("Something wrong while creating order");
@@ -56,7 +56,7 @@ export default function Cart() {
 	};
 
 	return (
-		<div>
+		<div className="pb-6" style={{ background: 'linear-gradient(to right, #74ebd5, #acb6e5)'}}>
 			{cartItems.length ? (
 				<div className="px-7 py-5 lg:py-10 flex flex-col lg:flex-row">
 					<div className="lg:w-3/4 lg:mr-8">
@@ -76,7 +76,7 @@ export default function Cart() {
 							<div className="flex items-center">
 								<p className="text-sm text-gray-700 m-0">Subtotal:</p>
 								&nbsp;&nbsp;
-								<h4 className="font-semibold m-0">${subTotal.toFixed(2)}</h4>
+								<h4 className="font-semibold m-0"><span className="text-xl">&#2547;</span>{subTotal.toFixed(2)}</h4>
 							</div>
 						</div>
 					</div>

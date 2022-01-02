@@ -43,7 +43,7 @@ export default function CartItem({ data }) {
 						{...{ handleIncrement, handleDecrement, handleAdjustment }}
 					/>
 					<span className="text-right price">
-						${(data.price * data.qty).toFixed(2)}
+					<span className="text-xl">&#2547;</span>{(data.price * data.qty).toFixed(2)}
 					</span>
 				</div>
 				<hr />

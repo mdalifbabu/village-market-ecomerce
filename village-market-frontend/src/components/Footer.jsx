@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
 	return (
 		<>
-			<div className="py-4 px-6 bg-gray-900 text-gray-200">
+			<div className="py-6 px-8" style={{ background: 'linear-gradient(to right, #74ebd5, #acb6e5)'}}>
 				<div className="flex justify-between text-xs md:text-sm">
 					<ul className="w-1/2 flex flex-col md:flex-row m-0">
 						<li className="mr-3">
@@ -18,12 +18,12 @@ export default function Footer() {
 						</li>
 					</ul>
 					<div className="w-1/2 text-right">
-						&copy; 2021 All Rights Reserved by{" Village Market Team"}
+						&copy; 2021 All Rights Reserved by{" Village Market Team "}
 						<a
 							href="https://facebook.com"
 							className="font-semibold"
 						>
-							Shakil Ahmed
+							@Name
 						</a>
 					</div>
 				</div>

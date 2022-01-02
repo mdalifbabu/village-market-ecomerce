@@ -4,7 +4,7 @@ import { Redirect } from "react-router";
 import HorizontalMenu from "../HorizontalMenu";
 import LoginPrompt from "../LoginPrompt";
 import VerticalMenu from "../VerticalMenu";
-// import Footer from "../Footer";
+import Footer from "../Footer";
 
 export default function UserLayout({ children }) {
 	const searchTerm = useSelector((state) => state.misc.searchTerm);
@@ -15,7 +15,7 @@ export default function UserLayout({ children }) {
 				<HorizontalMenu />
 				<div style={{ height: 64 }}></div>
 				<div className="app-content">{children}</div>
-				{/* <Footer /> */}
+				<Footer />
 			</div>
 			<LoginPrompt />
 			{searchTerm.length ? <Redirect to={`/search?q=${searchTerm}`} /> : null}

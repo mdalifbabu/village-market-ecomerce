@@ -47,7 +47,7 @@ function Home() {
 				</div>
 			</section>
 
-			<section className="featured p-2 md:p-4" style={{backgroundColor: "#D7BDE2"}}>
+			<section className="featured p-2 md:p-4" style={{ background: 'linear-gradient(to right, #74ebd5, #acb6e5)'}}>
 				<h2 className="ml-2 mt-2 font-bold text-xl md:text-2xl text-gray-700">
 					Featured Products
 				</h2>
